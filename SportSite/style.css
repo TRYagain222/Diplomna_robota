@@ -1,0 +1,392 @@
+/* Базові стилі для body */
+body {
+    display: flex; /* Робимо body flex-контейнером */
+    flex-direction: column; /* Елементи розташовуються у стовпчик */
+    min-height: 100vh; /* Висота body мінімум 100% висоти вікна перегляду */
+    margin: 0; /* Прибираємо стандартний зовнішній відступ body */
+    font-family: sans-serif;
+    color: #8a929e;
+    line-height: 1.6;
+}
+
+.site-wrapper {
+    flex-grow: 1; /* Дозволяємо обгортці займати весь доступний простір */
+    display: flex; /* Додати Flexbox для внутрішнього контенту */
+    flex-direction: column;
+    align-items: center; /* Центрувати контент по горизонталі */
+    width: 100%; /* Займає всю ширину */
+}
+
+.main-content {
+    max-width: 1200px; /* Обмеження ширини основного контенту для читабельності */
+    width: 90%; /* Займає 90% ширини батьківського елемента */
+    padding: 20px; /* Внутрішні відступи */
+    box-sizing: border-box; /* Враховувати padding у ширині */
+    background-color: rgba(255, 255, 255, 0.9); /* Трохи прозорий білий фон для контенту, щоб було видно фон body */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Вертикальні відступи від країв site-wrapper */
+}
+
+/* --- УНІКАЛЬНІ ФОНИ ДЛЯ СТОРІНОК --- */
+.home-page {
+    background: url('images/home-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.news-page {
+    background: url('images/news-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.contacts-page {
+    background: url('images/contacts-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.futbol-page { 
+    background: url('images/football-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.voleibol-page {
+    background: url('images/voleibol-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.nastilnyi-tenis-page { 
+    background: url('images/nastilnyi_tenis-background.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.paralimpiiske-plavannya-page { 
+    background: url('images/paralimpiiske_plavannya-background.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.basketbol-na-vizkakh-page { 
+    background: url('images/basketbol_na_vizkakh-background.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.lehka-atletyka-paralimpiada-page { 
+    background: url('images/lehka_atletyka_paralimpiada-background.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+
+/* СТИЛІ ДЛЯ СІТКИ ВИДІВ СПОРТУ */
+.sport-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sport-card {
+    background-color: #3df3c0;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+}
+
+.sport-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(91, 238, 233, 0.15);
+}
+
+.sport-card img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.sport-card h4 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+header {
+    background-color: #333; /* Темний фон для шапки */
+    color: #fff; /* Білий колір тексту в шапці */
+    padding: 1em 0; /* Відступи зверху та знизу */
+    text-align: center; /* Вирівнювання тексту по центру */
+}
+
+header h1 {
+    margin: 0; /* Прибираємо відступи заголовка */
+}
+
+nav ul {
+    list-style: none; /* Прибираємо маркери списку */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Використовуємо flexbox для розташування посилань в ряд */
+    justify-content: center; /* Вирівнюємо посилання по центру */
+}
+
+nav ul li {
+    margin: 0 1em; /* Відступи між елементами списку */
+}
+
+nav a {
+    color: #fff; /* Білий колір посилань */
+    text-decoration: none; /* Прибираємо підкреслення посилань */
+    font-weight: bold; /* Жирний шрифт для посилань */
+}
+
+main {
+    padding: 20px; /* Загальні відступи для основного контенту */
+}
+
+section {
+    background-color: #fff; /* Білий фон для секцій */
+    padding: 20px;
+    margin-bottom: 20px; /* Відступ між секціями */
+    border-radius: 8px; /* Заокруглені кути для секцій */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легка тінь для виділення секцій */
+}
+
+h2, h3 {
+    color: #333; /* Темно-сірий колір для заголовків */
+    margin-top: 0; /* Прибираємо верхній відступ заголовків */
+}
+
+ul {
+    list-style: disc; /* Стандартні маркери списку */
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center; /* Вирівнювання тексту по центру у футері */
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+    position: sticky; /* Фіксуємо футер внизу вікна */
+    bottom: 0;
+    width: 100%;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Пропорція 16:9 (найчастіше використовується для відео) */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 15px; /* Відступ між відео */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.data {
+    color: #777; /* Сірий колір для дати */
+    font-size: 0.9em; /* Трохи менший розмір шрифту для дати */
+    margin-bottom: 5px;
+}
+
+article {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd; /* Легка межа для кожної новини */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Світло-сірий фон для новин */
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+article a {
+    color: #43576c; /* Синій колір для посилання "Читати далі" */
+    text-decoration: none;
+}
+
+/* Стилі для футера */
+footer {
+    width: 100%;
+    background-color: #333; /* Темний фон */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+
+}
+
+/* Стилі для активного пункту меню */
+nav ul li a.active {
+    color: #b327ef; /* синій колір */
+    font-weight: bold; /* Зробити жирним */
+    border-bottom: 2px solid #007bff; /* Додати підкреслення */
+    padding-bottom: 5px; /* Невеликий відступ для підкреслення */
+}
+
+/*базові стилі для посилань навігації*/
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Білий колір для звичайних посилань */
+    padding: 10px 15px;
+    transition: all 0.3s ease; /* Плавний перехід для ховер-ефектів та зміни стану */
+}
+
+nav ul li a:hover {
+    color: #eec944; /* Зміна кольору при наведенні */
+}
+/* Секція слайдера */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1120px; /* Максимальна ширина слайдера */
+    margin: 20px auto; /* Центрування та відступ */
+    overflow: hidden; /* Обрізаємо все, що виходить за межі контейнера */
+    border-radius: 8px; /* Закруглені кути */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.slider-track {
+    display: flex; /* Розміщуємо слайди в рядок */
+    transition: transform 0.5s ease-in-out; /* Плавний перехід при зміні слайдів */
+}
+
+.slide {
+    min-width: 100%; /* Кожен слайд займає 100% ширини контейнера */
+    position: relative;
+    display: flex;
+    align-items: center; /* Центрування вмісту по вертикалі */
+    justify-content: center; /* Центрування вмісту по горизонталі */
+    color: #fff;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 450px; /* Фіксована висота для всіх слайдів */
+    object-fit: cover; /* Зображення покриває всю область, обрізаючи зайве */
+    filter: brightness(60%); /* Зробити зображення трохи темнішим для кращої читабельності тексту */
+}
+
+.slide-caption {
+    position: absolute;
+    max-width: 70%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий фон для тексту */
+    border-radius: 8px;
+}
+
+.slide-caption h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.slide-caption p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.slider-button {
+    background-color: #007bff; /* Колір кнопки */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.slider-button:hover {
+    background-color: #0056b3;
+}
+
+/* Навігаційні стрілки */
+.prev-slide, .next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px 10px;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.prev-slide {
+    left: 10px;
+}
+
+.next-slide {
+    right: 10px;
+}
+
+.prev-slide:hover, .next-slide:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Точки навігації */
+.slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dot.active {
+    background-color: #fff;
+    transform: scale(1.2);
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    .slide img {
+        height: 300px;
+    }
+    .slide-caption h2 {
+        font-size: 1.8em;
+    }
+    .slide-caption p {
+        font-size: 1em;
+    }
+    .prev-slide, .next-slide {
+        padding: 10px 5px;
+        font-size: 1.5em;
+    }
+}
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: none; /* Приховано за замовчуванням */
+}
+
+input.invalid, textarea.invalid {
+    border-color: red;
+}

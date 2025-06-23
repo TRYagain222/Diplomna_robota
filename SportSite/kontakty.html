@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Спортивний інформаційний сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="contacts-page">
+    <header>
+        <h1>Світ спорту</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="novyny.html">Новини</a></li>
+                <li><a href="traditional_sports.html">Звичайний спорт</a></li>
+                <li><a href="paralympic_sports.html">Паралімпійський спорт</a></li>
+                <li><a href="kontakty.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="site-wrapper"> <main class="main-content">
+        <section>
+            <h2>Контакти</h2>
+            <p>Ви можете зв'язатися з нами за наступними контактними даними:</p>
+            <ul>
+            <li>Електронна пошта: <a href="mailto:andrejkluev47@gmail.com">andrejkluev47@gmail.com</a></li>
+            <li>Телефон: +380 96 764 93 54</li>
+            </ul>
+
+            <p>Будемо раді вашим запитанням та пропозиціям!</p>
+        </section>
+        <form id="contactForm">
+    <div class="form-group">
+        <label for="name">Ваше ім'я:</label>
+        <input type="text" id="name" name="name" required>
+        <div class="error-message" id="nameError"></div>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Ваш Email:</label>
+        <input type="email" id="email" name="email" required>
+        <div class="error-message" id="emailError"></div>
+    </div>
+
+    <div class="form-group">
+        <label for="message">Повідомлення:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <div class="error-message" id="messageError"></div>
+    </div>
+
+    <button type="submit">Надіслати повідомлення</button>
+</form>
+
+        </main>
+        </div>
+
+    <footer>
+        <p>&copy; 2025 Спортивний інформаційний сайт</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

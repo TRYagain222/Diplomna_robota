@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна - Спортивний інформаційний сайт</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body class="home-page">
+    <header>
+        <h1>Світ спорту</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Головна</a></li>
+                <li><a href="novyny.html">Новини</a></li>
+                <li><a href="traditional_sports.html">Звичайний спорт</a></li>
+                <li><a href="paralympic_sports.html">Паралімпійський спорт</a></li>
+                <li><a href="kontakty.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="site-wrapper">
+        <main class="main-content">
+            <section id="hero">
+                <h2>Ласкаво просимо на наш спортивний сайт!</h2>
+                <p>Тут ви знайдете найцікавішу інформацію про різні види спорту.</p>
+            </section>
+
+            <section class="slider-container">
+                <div class="slider-track">
+                    <div class="slide">
+                        <img src="images/slider/slide1.jpg" alt="Спортивна подія 1">
+                        <div class="slide-caption">
+                            <h2>Спортивні події: Останні новини</h2>
+                            <p>Дізнайтеся про найяскравіші моменти зі світу спорту.</p>
+                            <a href="novyny.html" class="slider-button">Читати більше</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/slider/slide3.jpg" alt="Паралімпійський спорт">
+                        <div class="slide-caption">
+                            <h2>Паралімпійські досягнення</h2>
+                            <p>Історії незламності та перемог українських параспортсменів.</p>
+                            <a href="paralympic_sports.html" class="slider-button">Детальніше</a> </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/slider/slide2.jpg" alt="Тренування спортсменів">
+                        <div class="slide-caption">
+                            <h2>Відкрийте для себе види спорту</h2>
+                            <p>Все про історію, правила та секрети тренувань.</p>
+                            <a href="traditional_sports.html" class="slider-button">Переглянути види</a> </div>
+                    </div>
+                </div>
+
+                <button class="slider-button prev-slide" aria-label="Попередній слайд">&#10094;</button>
+                <button class="slider-button next-slide" aria-label="Наступний слайд">&#10095;</button>
+
+                <div class="slider-dots">
+                </div>
+            </section>
+
+            <section class="about-modern-sport-section container">
+                <h2>Сучасний спорт: Рух, Інклюзія, Перемога</h2>
+                <p>Сьогодні спорт – це не просто фізична активність, це невід'ємна частина культури та суспільного життя, яка об'єднує мільйони людей по всьому світу. Він виховує силу духу, дисципліну, повагу до суперника та вчить долати перешкоди. У XXI столітті спорт став потужним інструментом соціальної інтеграції, адже він відкритий для кожного, незалежно від віку, статі чи фізичних можливостей.</p>
+                <p>Наш сайт присвячений всебічному висвітленню спортивних подій в Україні, зосереджуючись як на традиційних, так і на паралімпійських видах спорту. Ми прагнемо надати актуальну інформацію про досягнення атлетів, анонси змагань, а також надихаючі історії про перемоги, які демонструють незламний дух людини.</p>
+                <p>Запрошуємо вас поринути у світ спорту, дізнатися більше про його різноманіття та значення для сучасного суспільства. Ознайомтеся з розділами, присвяченими **<a href="traditional_sports.html">традиційним видам спорту</a>** та **<a href="paralympic_sports.html">паралімпійському спорту</a>**, щоб знайти інформацію, яка вас цікавить.</p>
+            </section>
+            </main>
+    </div> <footer>
+        <p>&copy; 2025 <span id="currentYear"></span> Спортивний інформаційний сайт</p> </footer>
+    <script src="script.js"></script>
+    <button id="scrollToTopBtn" title="Нагору">&#9650;</button>
+</body>
+</html>
